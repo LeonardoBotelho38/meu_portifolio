@@ -1,0 +1,86 @@
+@use '../variables'
+@use '../mixins' 
+
+
+.projects
+    
+    
+    background-color: variables.$bg-color
+    flex: 2 1 0
+    border-radius: variables.$container-border-radius
+    padding: 3rem
+    
+   
+
+    h2
+        font-size: 2em
+        color: variables.$text-color
+        @include mixins.center
+        justify-content: start
+        gap: 1rem
+
+       
+        &:after
+            @include mixins.gradient-border
+
+  
+.container-projects
+    display: flex
+    flex-direction: column
+    
+    img
+        width: 14rem
+        margin: 2em
+        
+    p
+        color: variables.$text-color
+        font-size: 1.2em
+        line-height: 3em
+        align-items: center
+         
+
+.project
+    width: 100%
+    display: flex
+    margin-top: 3rem
+
+.btn
+    @include mixins.btn
+    font-weight: bolder
+    font-size: 1.2rem
+
+.project-link 
+    color: variables.$text-color
+    font-weight: bold
+    text-decoration: none
+    border: 2px solid #a52222
+    padding: 8px
+    border-radius: 10px
+    
+    
+.content-btn
+    display: flex
+    justify-content: flex-end
+       
+.icon-return
+    font-size: 2rem
+
+#html-project
+    color: #e44d26
+    font-size: 3em
+
+#css3-project
+    color:#1572b6
+    font-size: 3em
+
+#js-project
+    color:#f0db4f
+    font-size: 3em
+
+#react-project
+    color:#61dafb
+    font-size: 3em
+
+
+
+  
